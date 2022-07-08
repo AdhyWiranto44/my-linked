@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --mainBg: #fbf1c7;
+  --heading: #504945;
+  --paragraph: #7c6f64;
+  --item: #fabd2f;
+  --itemHover: #d79921;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--mainBg);
+  background-color: #fbf1c7;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fbf1c7 27px ), repeating-linear-gradient( #ebdbb255, #ebdbb2 );
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+}
+
+.myPhoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.myPhoto img {
+  border: 7px solid var(--heading);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+.myTitle {
+  text-align: center;
+}
+
+.myTitle p {
+  color: var(--paragraph);
+}
+
+.links {
+  width: 100%;
+  margin-top: 20px;
+  margin: auto;
+}
+
+.item {
+  margin: 20px;
+  border: 2px solid var(--heading);
+  border-radius: 1rem;
+  box-shadow: 0px 10px var(--heading);
+  background-color: var(--item);
+}
+
+.item:hover {
+  background-color: var(--itemHover);
+}
+
+.item:active {
+  position: relative;
+  top: 10px;
+  box-shadow: 0px 0px var(--heading);
+}
+
+.item a, .footer small {
+  display: block;
+  padding: 15px;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: none;
+  color: var(--heading);
+}
+
+.item i {
+  margin-right: 7px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+@media(min-width: 768px) {
+  .links {
+    width: 70%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .links {
+    width: 60%;
+  }
+}
