@@ -6,7 +6,7 @@ const links = [
   },
   {
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/adhy-wiranto-sudjana-665882155/",
+    url: "https://www.linkedin.com/in/adhy-wiranto-sudjana-s-t-665882155/",
     icon: "fab fa-linkedin"
   },
   {
@@ -16,7 +16,7 @@ const links = [
   },
   {
     title: "Instagram",
-    url: "https://instagram.com/wanindemilien",
+    url: "https://instagram.com/adhywiranto44",
     icon: "fab fa-instagram"
   },
   {
