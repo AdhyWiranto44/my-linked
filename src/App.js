@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import LinkComponent from './components/LinkComponent';
 import data from './links.json';
 
 class App extends React.Component {
@@ -15,9 +16,7 @@ class App extends React.Component {
     return (
       this.state.links.map(link => {
         return (
-          <div className='item'>
-            <a href={link.url}><i className={link.icon}></i>{link.title}</a>
-          </div>
+          <LinkComponent link={link} />
         );
       })
     );
